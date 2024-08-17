@@ -79,15 +79,43 @@
 
 // console.log(myFn(10, 3))
 
-const person0ne = {
+// const person0ne = {
+//   name: 'Bob',
+//   age: 21
+// }
+
+// function increasePersonAge(person) {
+//   person.age += 1 
+//   return person
+// }
+
+// increasePersonAge(person0ne)
+// console.log(person0ne.age)
+
+const personOne = {
   name: 'Bob',
   age: 21
 }
 
-function increasePersonAge(person) {
-  person.age += 1 
-  return person
+increasePersonAge = (person) => {
+  const updatedPerson = Object.assign({}, person)
+  updatedPerson.age += 1
+  return updatedPerson
 }
 
-increasePersonAge(person0ne)
-console.log(person0ne.age)
+// function increasePersonAge(person) {
+//   const updatedPerson = Object.assign({}, person)
+//   updatedPerson.age += 1
+//   return updatedPerson
+// }
+
+const updatedPersonOne = increasePersonAge(personOne)
+console.log(personOne.age) // 21
+console.log(updatedPersonOne.age) // 22
+
+function printMyName() {
+  console.log('Bogdan')
+}
+
+console.log('Start')
+setTimeout(printMyName, 2000)
