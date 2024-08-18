@@ -132,15 +132,35 @@
         
         // console.log(a)
 
-const button = { 
-  width: 200, 
-  text: 'Buy'
+// const button = { 
+//   width: 200, 
+//   text: 'Buy'
+// }
+
+// const redButton = {
+//   ...button,
+//   color: 'red',
+//   height: 800
+// }
+
+// console.table(redButton)
+
+
+const buttonInfo = {
+  text: 'buy'
 }
 
-const redButton = {
-  ...button,
-  color: 'red',
-  height: 800
+const buttonStyle = {
+  color: 'yellow',
+  width: 200,
+  height: 300
 }
 
-console.table(redButton)
+const button = {
+  ...buttonInfo,
+  ...buttonStyle
+}
+// Оператор ... это оператор деления обьекта на свойства
+
+console.table(button)
+
