@@ -146,21 +146,79 @@
 // console.table(redButton)
 
 
-const buttonInfo = {
-  text: 'buy'
+// const buttonInfo = {
+//   text: 'buy'
+// }
+
+// const buttonStyle = {
+//   color: 'yellow',
+//   width: 200,
+//   height: 300
+// }
+
+// const button = {
+//   ...buttonInfo,
+//   ...buttonStyle
+// }
+// // Оператор ... это оператор деления обьекта на свойства
+
+// console.table(button)
+
+// console.log(greetings)
+
+// setTimeout(function(a,b) {
+//   console.log('Postponed message.')
+// }, 1000)
+
+// const multByFactor = (value, multiplier = 1) => {
+//   return value * multiplier
+// }
+
+// console.log(multByFactor(10, 2))
+// console.log(multByFactor(5))
+
+// let datetime0 = new Date()
+
+// let datetime1 = Date()
+
+// let datetime2 = Date()
+
+// let datetime3 = Date()
+
+
+// let a = setTimeout(() => {
+//     let datetime1 = new Date();
+//     console.log(datetime1);
+// }, 65000);
+
+// let b = setTimeout(() => {
+//     let datetime2 = new Date();
+//     console.log(datetime2);
+// }, 130000);
+
+// let c = setTimeout(() => {
+//     let datetime3 = new Date();
+//     console.log(datetime3);
+// }, 195000);
+
+// console.log(datetime0);  // logs the initial time
+
+
+// console.log(datetime0)
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+const FnWithError = () => {
+  throw new Error('Some Error')
 }
 
-const buttonStyle = {
-  color: 'yellow',
-  width: 200,
-  height: 300
+try {
+  FnWithError()
+} catch (error) {
+  console.error()
+  console.log(error.message)
 }
 
-const button = {
-  ...buttonInfo,
-  ...buttonStyle
-}
-// Оператор ... это оператор деления обьекта на свойства
 
-console.table(button)
-
+console.log('Continue...')
