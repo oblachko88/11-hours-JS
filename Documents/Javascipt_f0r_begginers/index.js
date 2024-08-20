@@ -132,82 +132,82 @@
         
         // console.log(a)
 
-// const button = { 
-//   width: 200, 
-//   text: 'Buy'
-// }
+const button = { 
+  width: 200, 
+  text: 'Buy'
+}
 
-// const redButton = {
-//   ...button,
-//   color: 'red',
-//   height: 800
-// }
+const redButton = {
+  ...button,
+  color: 'red',
+  height: 800
+}
 
-// console.table(redButton)
-
-
-// const buttonInfo = {
-//   text: 'buy'
-// }
-
-// const buttonStyle = {
-//   color: 'yellow',
-//   width: 200,
-//   height: 300
-// }
-
-// const button = {
-//   ...buttonInfo,
-//   ...buttonStyle
-// }
-// // Оператор ... это оператор деления обьекта на свойства
-
-// console.table(button)
-
-// console.log(greetings)
-
-// setTimeout(function(a,b) {
-//   console.log('Postponed message.')
-// }, 1000)
-
-// const multByFactor = (value, multiplier = 1) => {
-//   return value * multiplier
-// }
-
-// console.log(multByFactor(10, 2))
-// console.log(multByFactor(5))
-
-// let datetime0 = new Date()
-
-// let datetime1 = Date()
-
-// let datetime2 = Date()
-
-// let datetime3 = Date()
+console.table(redButton)
 
 
-// let a = setTimeout(() => {
-//     let datetime1 = new Date();
-//     console.log(datetime1);
-// }, 65000);
+const buttonInfo = {
+  text: 'buy'
+}
 
-// let b = setTimeout(() => {
-//     let datetime2 = new Date();
-//     console.log(datetime2);
-// }, 130000);
+const buttonStyle = {
+  color: 'yellow',
+  width: 200,
+  height: 300
+}
 
-// let c = setTimeout(() => {
-//     let datetime3 = new Date();
-//     console.log(datetime3);
-// }, 195000);
+const button = {
+  ...buttonInfo,
+  ...buttonStyle
+}
+// Оператор ... это оператор деления обьекта на свойства
 
-// console.log(datetime0);  // logs the initial time
+console.table(button)
+
+console.log(greetings)
+
+setTimeout(function(a,b) {
+  console.log('Postponed message.')
+}, 1000)
+
+const multByFactor = (value, multiplier = 1) => {
+  return value * multiplier
+}
+
+console.log(multByFactor(10, 2))
+console.log(multByFactor(5))
+
+let datetime0 = new Date()
+
+let datetime1 = Date()
+
+let datetime2 = Date()
+
+let datetime3 = Date()
 
 
-// console.log(datetime0)
-// console.log(a)
-// console.log(b)
-// console.log(c)
+let a = setTimeout(() => {
+    let datetime1 = new Date();
+    console.log(datetime1);
+}, 65000);
+
+let b = setTimeout(() => {
+    let datetime2 = new Date();
+    console.log(datetime2);
+}, 130000);
+
+let c = setTimeout(() => {
+    let datetime3 = new Date();
+    console.log(datetime3);
+}, 195000);
+
+console.log(datetime0);  // logs the initial time
+
+
+console.log(datetime0)
+console.log(a)
+console.log(b)
+console.log(c)
 
 const FnWithError = () => {
   throw new Error('Some Error')
